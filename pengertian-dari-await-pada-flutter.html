@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pengertian Dari Await Pada Flutter - BELAJAR</title>
+    <meta name="description" content="Pengertian Dari Await Pada Flutter, , , , , , , 0, , , , , , 0, pengertian-dari-await-pada-flutter, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pengertian Dari Await Pada Flutter - BELAJAR" />
+    <meta property="og:description" content="Pengertian Dari Await Pada Flutter, , , , , , , 0, , , , , , 0, pengertian-dari-await-pada-flutter, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pengertian Dari Await Pada Flutter - BELAJAR" />
+    <meta name="twitter:description" content="Pengertian Dari Await Pada Flutter, , , , , , , 0, , , , , , 0, pengertian-dari-await-pada-flutter, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://maknaskripsi.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://maknaskripsi.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://maknaskripsi.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://maknaskripsi.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://maknaskripsi.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://maknaskripsi.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://maknaskripsi.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://maknaskripsi.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://maknaskripsi.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://maknaskripsi.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Pengertian Dari Await Pada Flutter</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">User</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Pengertian+Dari+Await+Pada+Flutter" alt="Pengertian Dari Await Pada Flutter">
+                    </div>
+                    <p></p>
+                    <p>Jelaskan tentang widget flutter. Berikan penjelasan Anda termasuk jenis widget di flutter?</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-tentang-widget-flutter-berikan-penjelasan-anda-termasuk-jenis-widget-di-flutter">1.
+                                            Jelaskan tentang widget flutter. Berikan penjelasan Anda termasuk jenis widget di flutter?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-manfaat-dari-flutter-kicks">2.
+                                            Apa manfaat dari flutter kicks</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-arti-dari-puff-flutterdan-waggle%e2%80%8b">3.
+                                            apa arti dari puff, flutter,dan waggle​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-itu-flutter-dan-apa-kegunaannya-dalam-pengembangan-perangkat-lunak">4.
+                                            Apa itu Flutter dan apa kegunaannya dalam pengembangan perangkat lunak?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#never-grow-uptaylor-swiftyour-little-hands-wrapped-around-my-fingerand-its-so-quiet-in-the-world-tonightyour-little-eyelids-flutter-cause-youre-dreamingso-i-tuck-you-in-and-turn-on-your-favorite-nig">5.
+                                            Never Grow UpTaylor SwiftYour little hands wrapped around my fingerAnd it's so quiet in the world tonightYour little eyelids flutter cause you're dreamingSo I tuck you in and turn on your favorite nightlightTo you, everything's funnyYou got nothing to regretI'd give all I have honeyIf you could stay like thatOh darling don't you ever grow up, don't you ever grow upJust stay this littleOh darling don't you ever grow up, don't you ever grow upIt could stay this simpleI won't let nobody hurt youWon't let no one break your heartNo one will desert youJust try to never grow upNever grow up                               1. The figure "you" in the song is the singer's........​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#combo-max-ice-cream-you-are-not-satisfied-with-the-usual-ice-cream-you-feel-just-try-combo-max-ice-cream-it-is-an-ice-cream-with-three-flavours-in-one-bite-you-do-not-need-to-buy-a-lot-of-ice-cream">6.
+                                            Combo Max Ice Cream You are not satisfied with the usual ice cream you feel? Just try! Combo Max ice cream It is an ice cream with three flavours in one bite. You do not need to buy a lot of ice cream to feel a lot of ice cream. Quite simply by biting a Combo Max Ice Cream, then Chocolate, Vanilla and Milk will attack your tongue. Hmmmm Yummyyyyyy!!! 3 Collect stickers which are also available in the ice cream's pack and seize the opportunity for a vacation to Disney Land along with Ice Cream Combo Max and hundreds of other prizes that await you. The draw of the winner is until July 30, 2019. Hurry up opportunity will not come 2 times. Ice Cream Combo Max only for enthusiast delights. Questions: 1. What advertisement is this? 2. What is the purpose of the text? 3. What flavours is mix in one bite? 4. What is the grand prize for the winner? 5. How long is the promo last?tolong jwb y ,buat bsk​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#read-the-text-carefully-and-answer-the-question-a-tsunami-is-a-series-of-giant-ocean-waves-that-sends-surges-of-water-sometimes-the-waves-can-reach-heights-of-over-100-feet-so-they-can-be-the-dest">7.
+                                            Read the text carefully and answer the question! A tsunami is a series of giant ocean waves that sends surges of water. Sometimes, the waves can reach heights of over 100 feet, so they can be the destructive force for the nearest area. They will successfully reach the shore and sweep everything there. Most tsunamis, about 80 percent, happen within the Pacific Ocean's "Ring of Fire", as a label for a geologically active area where tectonic shifts make volcanoes and earthquakes common. Large underwater earthquakes at tectonic plate boundaries can be potential to cause the enormous waves. It can happen when the ocean floor rises or falls suddenly. This moment leads to displace the water above it and launch the rolling waves. Besides, volcanic eruptions can also cause tsunamis because they are also potential to be earthquakes. Based on the previous cases, people usually focus on the first wave of the series only. They think the wave which is not really huge cannot be potential to be a tsunami. However, they should remember that the danger may not have passed with the first wave and should await official announcement about the condition of the vulnerable locations. "Large underwater earthquakes at tectonic plate boundaries can be potential to cause the enormous waves." (paragraph 2) The underlined word can be replaced by ....a. narrow b. petite c. giganticd. miniscule ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#getx-flutter-2-5-ai-machine-learning-course-with-null-safety">8.
+                                            GetX Flutter 2.5 Ai Machine Learning Course with Null Safety .....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#after-the-accident-the-driver-managed-to-__-to-the-nearest-house-and-call-an-ambulancea-flatterb-flutterc-staged-staggertolong-dijawab-yaa-%e2%99%a5%ef%b8%8f">9.
+                                            After the accident, the driver managed to __ to the nearest house and call an ambulance
+a. Flatter
+b. Flutter
+c. Stage
+d. Stagger
+Tolong dijawab yaa ♥️</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sambungan-dari-text-itu-monkeys-anxiously-await-klotok-arrivals-a-troop-of-30-light-brown-monkeys-may-plunge-from-branches-10-meters-of-higher-into-the-river-and-cross-directly-in-front-of-the-boa">10.
+                                            Sambungan dari text itu: Monkeys anxiously await klotok arrivals. A troop of 30 light - brown monkeys may plunge from branches 10 meters of higher into the river and cross directly in front of the boat. These monkeys know that the boat's engine noise and the threat of its propeller scare crocodiles,which find these chubby monkeys delicious. At night, you can enjoy the clear sky and the amazingly bright stars as the only lights for the night.
+With such exotic, no wonder many tourists from foreign countries who love ecotourism frequently visit tanjung puting national park. What about you?
+Pertanyaan:
+1 How is the park different from the parks cities?
+2. How is camp leakey related to tanjung puting national park?
+3. What does the word ex-captive tell you about the orangutans in camp leakey,which is a rehabilitation site for orangutans?
+6. How can people reach camp leakey?
+JAWAB YG BENAR!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-complete-the-table-with-the-correct-form-of-verbverb-baseregular-verb-and-irregular-verb1-await-verb-2-verb-32-become-verb-2-verb-33-bring-verb-2-verb-34-buy-verb-2-verb">11.
+                                            A.complete the table with the correct form of verbverb base:regular verb and irregular verb:1. await : verb 2? : verb 3?2. become : verb 2? : verb 3?3. bring : verb 2? : verb 3?4. buy : verb 2? : verb 3?5. cry : verb 2? : verb 3?6. die : verb 2? : verb 3?7. fall : verb 2? : verb 3?8. feel: verb 2? : verb 3?9. find: verb 2? : verb 3?10. gain : verb 2? : verb 3?11. greet : verb 2? : verb 3?12. hide : verb 2? : verb 3?13. hunt : verb 2? : verb 3?14. lie : verb 2? : verb 3?15. organize : verb 2? : verb 3? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-memo-pesan-singkat-berikut-ini-1-the-students-association-chairperson-reminds-a-member-to-attend-the-monthly-meeting-it-will-be-held-at-0200-p-m-in-the-school-hall2-the-librarian-re">12.
+                                            buatlah memo/ pesan singkat, berikut ini :
+1. the students' association chairperson reminds a member to attend the monthly meeting. it will be held at 02:00 p.m. in the school hall
+2. the librarian reminds a student to return the story book he/she has borrowed. other students await to borrow it
+3. the headmistress infroms the duty-teacher that she may be hack late from her out of town trip. the staff meeting is rescheduled to the following day.
+4. there was a phone call for the geography teacher while she was teaching. the administration staff infroms her about it</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bisakah-menerjemahkan-puisi-ini-kedalam-bahasa-indonesia-dream-of-a-floating-boatwhere-it-heads-to-the-ship-of-truth-still-longs-for-the-unseen-dawn-flutter-your-dream-and-carry-your-sorrow">13.
+                                            Bisakah menerjemahkan puisi ini kedalam bahasa indonesia ?
+Dream of a floating Boat
+Where it heads to ? 
+The ship of truth. 
+Still longs for the unseen dawn. 
+Flutter your dream and carry your sorrow. 
+Set forth with your passionate will ! 
+As if defying the strong current of a river,
+You just seem to want to move forward without realizing that,
+I want to follow you even if I can't see what's ahead. 
+While believing in the faraway end of the strong torrent. 
+In the emptiness of darkness,
+In the wandering night,
+I want to light a faint flame in my tiny hand ! 
+Where it heads to ? 
+The blue ship. 
+Heads for the invisible tomorrow. 
+Risk your life and everything else in the search for the great distant land. 
+Makasih...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#please-briefly-explain-the-steps-of-writing-a-flutter-apps">14.
+                                            Please briefly explain the steps of writing a flutter apps?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#if-a-company-build-a-mobile-application-using-flutter-describe-its-benefits-justify-the-answers">15.
+                                            If a company build a mobile application using flutter, describe its benefits?. Justify the answers.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-memo-pesan-singkat-berikut-ini-1-the-students-association-chairperson-reminds-a-member-to-attend-the-monthly-meeting-it-will-be-held-at-0200-p-m-in-the-school-hall2-the-librarian-re">16.
+                                            buatlah memo/ pesan singkat, berikut ini :
+1. the students' association chairperson reminds a member to attend the monthly meeting. it will be held at 02:00 p.m. in the school hall
+2. the librarian reminds a student to return the story book he/she has borrowed. other students await to borrow it
+3. the headmistress infroms the duty-teacher that she may be hack late from her out of town trip. the staff meeting is rescheduled to the following day.
+4. there was a phone call for the geography teacher while she was teaching. the administration staff infroms her about it</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#b-arranges-thesentencesareai-the-labour-the-students-observingubout-ex-permet2student-the-notionservation-the-guide-theinvites-on3the-resolat-ergondin-await-the-student4thecleaner-well-wor">17.
+                                            B arranges thesentencesareaI the labour - the Students - observingUbout - ex permet,2Student - the notionservation.The guide - theinvites-on3the resolat ergondin.await-the student4Thecleaner -well-worus-the job-on5some experiments-done-by- the scientis- Carlo​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-traveling-in-the-boat-offers-an-unforgettable-experience-in-daylight-on-your-way-to-camp-leakey-you-can-see-trees-filled-with-proboscis-monkeys-monkeys-that-have-an-enormous-snout-which-can-on">18.
+                                            The traveling in the boat offers an unforgettable experience. In daylight, on your way to Camp Leakey, you can see trees filled with proboscis monkeys, monkeys that have an enormous snout which can only be found in Kalimantan. The monkeys anxiously await klotok arrivals. A troop of 30 light-brown monkeys may plunge from branches 10 meters or higher into the river and cross directly in front of the boat. These monkeys know that the boat’s engine noise and the threat of its propeller scare the crocodiles, which find these chubby monkeys delicious. At night, you can enjoy the clear sky and the amazingly bright stars as the only lights for the night.
+What is the main idea of this paragraph?
+ A. Klotok arrivals
+B. the threat of crocodiles
+C. the trip to Camp Leakey
+D. boathouse called 'klothok'
+ E. Proboscis monkeys</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#never-grow-uptaylor-swiftyour-little-hands-wrapped-around-my-fingerand-its-so-quiet-in-the-world-tonightyour-little-eyelids-flutter-cause-youre-dreamingso-i-tuck-you-in-and-turn-on-your-favorite-nig">19.
+                                            Never Grow UpTaylor SwiftYour little hands wrapped around my fingerAnd it's so quiet in the world tonightYour little eyelids flutter cause you're dreamingSo I tuck you in and turn on your favorite nightlightTo you, everything's funnyYou got nothing to regretI'd give all I have honeyIf you could stay like thatOh darling don't you ever grow up, don't you ever grow upJust stay this littleOh darling don't you ever grow up, don't you ever grow upIt could stay this simpleI won't let nobody hurt youWon't let no one break your heartNo one will desert youJust try to never grow upNever grow upPertanyaan ;                                                                               1. The figure 'you" in the song is the singer's ....2. From the third paragraph, the singer wants to always ... you from disturbances.TOLONG JAWAB DENGAN BENAR DAN TELITI Trimakasih​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#gangguan-ritme-berupa-kelainan-dalam-frekuensi-kecepatan-denyut-jantung-karena-serambil-atrium-dan-bilik-ventrikel-berdenyut-lebih-cepat-tachycardia-atau-lebih-lambat-bradycardia-dari-normal">20.
+                                            Gangguan ritme berupa kelainan dalam frekuensi (kecepatan) denyut jantung karena serambil (atrium) dan bilik (ventrikel) berdenyut lebih cepat (tachycardia) atau lebih lambat (bradycardia) dari normal. Dapat pula karena terjadinya kekacauan dalam ritme (irama) denyutan jantung, misalnya vibrasi (flutter), getaran (fibrilasi) ataupun extrasistole. Kondisi tersebut termasuk ke dalam…</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#di-bantu-translate-ke-bhsa-indonesia-bed-time-story-im-gonna-tell-my-grand-kids-30-years-from-nowonce-upon-a-time-king-ronaldo-conquer-the-world-and-decided-to-rest-for-a-year-and-decided-to-let-pri">21.
+                                            di bantu translate ke bhsa Indonesia  Bed time story im gonna tell my grand kids 30 years from nowOnce upon a time, King Ronaldo conquer the world and decided to rest for a year and decided to let Prince Messi take over. After a whole year of hibernation and rest, king Ronaldo decided to wake up. He wasnt happy about the performance of Prince Messi after he failed to conquer the Copa America. King Ronaldo decided to conquer Europe with his Elite Soldiers from Real Madrid then went ahead and conquer it again with his other troops from Portugal. Even he was badly hurt in the Euro finals, his leadership and enthusiasm carried the whole team and crown King Ronaldo the best! Prince Messi was crying after he heard the news. Another Challenge awaits in the Club World Cup were a team from America and from the far east await! King Ronaldo slay Club America with him giving the final blow and slay the Mighty Japanese team Antlers with 3 deadly strikes and became the King of club world cup yet again while Prince Messi and his Barcelona boys are devastated to hear the news. King Ronaldo  is truly cementing his greatness after another astonishing year! I would love to finish this story my grandson but thats for another night. To be continued....</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-complete-the-letters-with-the-words-in-the-boxes-letter-1-you-to-attend-a-special-benefit-will-go-the-heidrich-literacy-council-performance-featuring-the-famous-comedian-stefan-heidrich-all-towa">22.
+                                            5. Complete the letters with the words in the boxes. Letter 1 you to attend a special benefit will go The Heidrich Literacy Council performance featuring the famous comedian, Stefan Heidrich. All towards next year's literacy campaign. You may already know that the Heidrich Literacy Council has taught over 1,000 adults in the Springfield you didn't know that we also and private schools to improve their libraries. to read and write each year since 2001. But perhaps thousands of dollars every year to public You can contribute to these efforts by purchasing a ticket to the benefit performance, which will be on May 9th at 8 p.m. in the Springfield High School auditorium. The cost of the tickets is only $15.00 per person. is a mail order form for your tickets. Please specify the number of tickets you desire and enclose a check for the appropriate amount. If you cannot attend but you would still like to make a donation, we will receive it. We eagerly await your a. proceeds b. gratefully invites reply donate enclosed C. d. e. 9. h. area held​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-dijawabsoal-bahasa-inggris-pilihan-jawabanlopeflitcrawlhopflylumberclimbscamperwanderglideslitherrunfriskdiveboundwaddlefluttertolong-dijawab-plissssbuat-hari-initerimakasih">23.
+                                             tolong dijawab,soal bahasa inggris pilihan jawaban:lope,flit,crawl,hop,fly,lumber,climb,scamper,wander,glide,slither,run,frisk,dive,bound,waddle,fluttertolong dijawab plissss,buat hari iniTERIMAKASIH​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebagai-seorang-yang-ahli-dalam-bidang-pemrograman-anda-mendapat-pesanan-untuk-membuat-aplikasi-inventori-barang-yang-dapat-bekerja-pada-platform-android-dan-ios-dengan-anggaran-15-juta-rupiah-dari">24.
+                                            Sebagai seorang yang ahli dalam bidang pemrograman, anda mendapat pesanan untuk membuat aplikasi inventori barang yang dapat bekerja pada platform Android dan IOS. Dengan anggaran 15 juta rupiah dari pemesan, bahasa pemrograman yang sebaiknya Anda gunakan adalah...A. FlutterB. LaravelC. IOS StudioD. CodelgniterE. Android Visual Studio ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-buatin-memo-donk-dengan-situasi-berikut-the-librarian-reminds-a-student-to-return-the-story-book-heshe-has-borrowed-other-students-await-to-borrow-it">25.
+                                            tolong buatin memo donk.. dengan situasi berikut        the librarian reminds a student to return the story book he/she has borrowed.other students await to borrow it </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#is-popularly-called-perahu-kook-which-is-thefour-takes-three-days-and-two-nights-you-sleep-sk-and-anight-and-day-during-your-journey-into-the-jungethe-traveling-in-the-boat-offers-an-unforgettable-c">26.
+                                            is popularly called perahu kook which is thefour takes three days and two nights. You sleep.sk, and anight and day during your journey into the jungeThe traveling in the boat offers an unforgettable creence, la daton your way to Camp Leakey, you can see trees filled with prois moismonkeys that have an enormous snout which can only be found in KThe monkeys anxiously await klotok arrivals. A troop ofmonkeys may plunge from branches 10 meters or higher into the river menosdirectly in front of the boat. These monkeys know that the bea's engine isand the threat of its propeller scare the crocodiles, which find these daymonkeys delicious. At night, you can enjoy the clear sky and the amazinglybright stars as the only lights for the night​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#build-a-social-network-with-flutter-and-firebase">27.
+                                            Build a social network with flutter and firebase !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#question-1decide-if-the-verb-in-brackets-need-to-or-without-to-tentukan-apakah-verb-yg-ada-di-dalam-kurung-perlu-menggunakan-to-atau-tanpa-to1-she-makes-him-do-_____-everything-she-wants-2-e">28.
+                                            Question 1
+Decide if the verb in brackets need to or without to. (Tentukan apakah verb yg ada di dalam kurung perlu menggunakan TO atau tanpa TO)
+1. She makes him (do) _____ everything she wants.
+2. Every driver must (take) _____ an examination.
+3. It is better (go) _______ away than to stay.
+4. We stood waiting for him (recover) _____.
+5. I felt the floor (tremble) _____.
+6. It was decided (await) _____ his reply.
+7. I watched him (go) _____ down the path.
+8. I will let him (know) _____ you are here.
+9. I don't see what he can (gain) _____ by it.
+10. The magistrate warned him (not / do) _____ it again.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cleaning-a-blender-is-easy-but-it-can-be-hard-if-you-dont-clean-it-immediately-after-you-use-it-even-if-you-dont-have-the-time-to-clean-it-immediately-after-use-at-least-pour-in-this-simple-clea">29.
+                                            Cleaning a blender is easy, but it can be hard if you don't clean it immediately after you use it. Even if you don't have the time to clean it immediately after use, at least, pour in this simple cleaning mixture to await your return later.
+1) Ensure that the blender jug is sitting on the base properly before proceeding.
+2) Fill the jug half full with warm water.
+3) Add one to two drops of dish-washing liquid; if you have a lemon, put in half a lemon, as the lemon rind will scrape off any particles and the juice and rind will eliminate odours.
+4) Place the lid on the blender.
+5) Plug the blender back into the electrical socket or switch the power point on.
+6) Press the low blend button and allow to blend for up to 30 seconds.
+7) Check that it has caught all the particles.
+8) Pour the liquid down the sink.
+9) Rinse under the faucet.
+10) Place upside down on a dish rack to dry.
+We should ... before turning on the blender.
+Select one:
+a. rinse it under the faucet
+b. place the lid on
+c. pour the water down the sink
+d. dry it</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#to-sarahhappy-graduationyou-are-a-big-sister-who-i-always-look-up-tocongratulations-on-your-graduation-may-bright-futureawait-you-keep-working-hard-and-keep-on-dreaminglovezara14-the-card-is-wri">30.
+                                            To: SarahHappy Graduation!You are a big sister who I always look up toCongratulations on your graduation! May bright futureawait you. Keep working hard and keep on dreamingLove,Zara14. The card is written to congratulate one'sA. victoryB. birthdayC. recoveryD. achievement 15. What has Sarah done?A. She has finished her studies.B. She has been a reliable sister.C. She has achieved her dreams.D. She comes first at school.16. Zara hopes that Sarah willA. have a sweet dreamB. always work hardC. always make her proudD. study hard for her exams​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#benarkah-flutter-bahasa-pemprograman-yg-di-kembangkan-oleh-google">31.
+                                            Benarkah Flutter bahasa pemprograman yg di kembangkan oleh google..??</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-2-irre-irregular-verbs-do-not-follow-example-come-came-give-gave-draw-drew-exercise-do-the-tasks-below-task-1-complete-the-sentences-by-changing-the-verb-in-the-brackets-to-simple-past-tense">32.
+                                            1. 2. Irre Irregular verbs do not follow Example: Come came Give gave Draw - drew Exercise Do the tasks below! Task 1 Complete the sentences by changing the verb in the brackets to simple past tense! the Indonesian's independence history in the radio. (listen) it very much. (enjoy) to disturb her. (not/want) (laugh) into the room. (flutter) 1. I 2. The sack race was very exciting. I 3. Sarah was very busy yesterday, so l 4. It was a funny situation but nobody 5. The window was open, so a bird 6. We 7. My sister 8. My tandem race team 9. The band 10. Roy and Ryan Go-went Buy-bought Run - ran 8 GP &gt;&gt;&gt; in the parade last year. (not/participate my grandparents three weeks ago. (vis the game last month. (not/w the traditional musical instruments skilfully. the panjat pinang yesterday. (no Bahasa Inggris VIII​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#arti-dari-i-miss-you-when-you-are-not-near-mei-long-to-hear-your-steps-thats-by-far-the-sweetest-music-my-ears-await-everyday">33.
+                                            arti dari I miss you when you are not near me,i long to hear your steps.that's by far the sweetest music my ears await everyday</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#the-traveling-in-the-boat-offers-an-unforgettable-experience-in-daylight-on-your-way-to-camp-leakey-you-can-see-trees-filled-with-proboscis-monkeys-monkeys-that-have-an-enormous-snout-which-can-on">34.
+                                            The traveling in the boat offers an unforgettable experience. In daylight, on your way to Camp Leakey, you can see trees filled with proboscis monkeys, monkeys that have an enormous snout which can only be found in Kalimantan. The monkeys anxiously await klotok arrivals. A troop of 30 light-brown monkeys may plunge from branches 10 meters or higher into the river and cross directly in front of the boat. These monkeys know that the boat's engine noise and the threat of its propeller scare the crocodiles, which find these chubby monkeys delicious. At night, you can enjoy the clear sky and the amazingly bright stars as the only lights for the night. What is the main idea of this paragraph? A. Klotok arrivals B. The threat of crocodiles C. The trip to Camp Leakey D. Boathouse called 'klothok' E. Proboscis monkeys</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#completet-the-sentences-by-changing-the-verb-in-the-brackets-to-simple-past-tense1-i-the-indonesians-independence-history-in-the-radio-listen2-the-sack-race-was-very-esciting-i-it-ve">35.
+                                            Completet the sentences by changing the verb in the brackets to simple past tense1.i.........the indonesian's independence history in the radio (listen)2.the sack race was very esciting.i........it very much (enjoy)3.sarah was very busy yesterday,so i.......... to disturb her. (not/want)4.it was funny. situation but nobody............(laugh)5.the window was open, so a bird........intothe room.(flutter)​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-lirik-lagu-flutter-dan-terjemahan-nya%e2%80%8b">36.
+                                            tuliskan lirik lagu flutter dan terjemahan nya!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#question-1-decide-if-the-verb-in-brackets-need-to-or-without-to-tentukan-apakah-verb-yg-ada-di-dalam-kurung-perlu-menggunakan-to-atau-tanpa-to-1-she-makes-him-do-_____-everything-she-wants-2-e">37.
+                                            question 1 decide if the verb in brackets need to or without to. (tentukan apakah verb yg ada di dalam kurung perlu menggunakan to atau tanpa to) 1. she makes him (do) _____ everything she wants. 2. every driver must (take) _____ an examination. 3. it is better (go) _______ away than to stay. 4. we stood waiting for him (recover) _____. 5. i felt the floor (tremble) _____. 6. it was decided (await) _____ his reply. 7. i watched him (go) _____ down the path. 8. i will let him (know) _____ you are here. 9. i don't see what he can (gain) _____ by it. 10. the magistrate warned him (not / do) _____ it again.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#explain-about-the-future-class-in-flutter">38.
+                                            Explain about the future class in flutter.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#transilt-how-to-clean-a-blender-cleaning-a-blender-is-easy-but-it-can-be-hard-if-you-dont-clean-it-immediately-after-you-use-it-even-if-you-dont-have-the-time-to-clean-it-immediately-after-use-a">39.
+                                             transilt How to Clean a Blender Cleaning a blender is easy, but it can be hard if you don't clean it immediately after you use it. Even if you don't have the time to clean it immediately after use, at least, pour in this simple cleaning the mixture to await your return later. 1) Ensure that the blender jug is sitting on the base properly before proceeding. 2) Fill the jug half full with warm water. 3) Add one to two drops of dish-washing liquid; if you have a lemon, put in half a lemon, as the lemon rind will scrape off any particles and the juice and rind will eliminate odours. 4) Place the lid on the blender. 5) Plug the blender back into the electrical socket or switch the power point on. 6) Press the low blend button and allow to blend for up to 30 seconds. 7) Check that it has caught all the particles. 8) Pour the liquid down the sink. 9) Rinse under the faucet. 10) Place upside down on a dish rack to dry.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sambungan-dari-text-itu-monkeys-anxiously-await-klotok-arrivals-a-troop-of-30-light-brown-monkeys-may-plunge-from-branches-10-meters-of-higher-into-the-river-and-cross-directly-in-front-of-the-boa">40.
+                                            Sambungan dari text itu: Monkeys anxiously await klotok arrivals. A troop of 30 light - brown monkeys may plunge from branches 10 meters of higher into the river and cross directly in front of the boat. These monkeys know that the boat's engine noise and the threat of its propeller scare crocodiles,which find these chubby monkeys delicious. At night, you can enjoy the clear sky and the amazingly bright stars as the only lights for the night.
+With such exotic, no wonder many tourists from foreign countries who love ecotourism frequently visit tanjung puting national park. What about you?
+Pertanyaan:
+1 How is the park different from the parks cities?
+2. How is camp leakey related to tanjung puting national park?
+3. What does the word ex-captive tell you about the orangutans in camp leakey,which is a rehabilitation site for orangutans?
+6. How can people reach camp leakey?
+JAWAB YG BENAR!</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="jelaskan-tentang-widget-flutter-berikan-penjelasan-anda-termasuk-jenis-widget-di-flutter">
+                            1. Jelaskan tentang widget flutter. Berikan penjelasan Anda termasuk jenis widget di flutter?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Flutter adalah sebuah framework aplikasi mobil sumber terbuka yang diciptakan oleh Google. Flutter digunakan dalam pengembangan aplikasi untuk sistem operasi Android dan iOS, serta menjadi metode utama untuk membuat aplikasi Google Fuchsia.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-manfaat-dari-flutter-kicks">
+                            2. Apa manfaat dari flutter kicks</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Flutter</strong><strong> </strong><strong>kicks</strong> adalah latihan yang akan meningkatkan kekuatan otot perut dan menambah stamina anda. </p><p><strong>Penjelasan:</strong></p><p><strong>Flutter</strong><strong> </strong><strong>kicks</strong><strong> </strong><strong>akan</strong><strong> </strong><strong> </strong><strong>membentuk</strong><strong> </strong><strong>sixpack</strong><strong> </strong><strong>di</strong><strong> </strong><strong>perut</strong><strong> </strong><strong>anda</strong><strong>.</strong></p><p></p><p></p><p></p><p></p><p><strong>Semoga</strong><strong> </strong><strong>membantu</strong></p><br />
+                                            <h2 class="ez-toc-section" id="apa-arti-dari-puff-flutterdan-waggle%e2%80%8b">
+                            3. apa arti dari puff, flutter,dan waggle​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Puff Artinya Engah, Mengisap, Mengepul</p><p>Flutter Artinya Berdebar, Berkibar</p><p>Waggle Artinya Menggoyangkan, Mengibaskan</p><p></p><p><strong>Jawaban:</strong></p><p>Semoga membantu</p><p><strong>Penjelasan:</strong></p><p>Puff = Engah</p><p>Flutter=berdebar</p><p>Waggle=Menggoyangkan</p><br />
+                                            <h2 class="ez-toc-section" id="apa-itu-flutter-dan-apa-kegunaannya-dalam-pengembangan-perangkat-lunak">
+                            4. Apa itu Flutter dan apa kegunaannya dalam pengembangan perangkat lunak?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Flutter adalah sebuah framework open-source yang dikembangkan oleh Google. Framework ini digunakan untuk membangun antarmuka pengguna (user interface) pada berbagai platform seperti Android, iOS, web, desktop, dan lain-lain. </p><p></p><p>Kegunaan Flutter dalam pengembangan perangkat lunak adalah sebagai berikut:</p><p></p><p>1. Pengembangan lintas platform: Dengan Flutter, Anda dapat mengembangkan aplikasi yang dapat berjalan di berbagai platform, termasuk Android, iOS, web, desktop, dan lain-lain. Hal ini mengurangi kebutuhan untuk mengembangkan aplikasi terpisah untuk setiap platform.</p><p></p><p>2. Antarmuka pengguna yang kaya: Flutter menyediakan berbagai komponen dan widget yang memungkinkan pengembang untuk membuat antarmuka pengguna yang menarik dan responsif. Widget tersebut dapat dengan mudah dikustomisasi dan dirancang sesuai dengan kebutuhan aplikasi.</p><p></p><p>3. Kinerja yang tinggi: Flutter menggunakan rendering langsung (direct rendering) yang memungkinkan aplikasi memiliki kinerja yang tinggi dan responsif. Hal ini karena Flutter dapat menggambar antarmuka pengguna langsung pada layar perangkat, tanpa menggunakan jembatan (bridge) seperti pada framework lainnya.</p><p></p><p>4. Hot Reload: Salah satu fitur unggulan Flutter adalah Hot Reload, yang memungkinkan pengembang untuk melihat perubahan yang dilakukan pada kode secara instan, tanpa perlu melakukan kompilasi ulang atau me-restart aplikasi. Fitur ini mempercepat proses pengembangan dan memungkinkan pengembang untuk eksperimen dengan cepat.</p><p></p><p>5. Pengembangan UI konsisten: Dengan menggunakan Flutter, Anda dapat menciptakan pengalaman pengguna yang konsisten di berbagai platform. Widget dan desain yang sama dapat digunakan di semua platform, sehingga memudahkan pengembangan dan mempertahankan konsistensi tampilan antarmuka pengguna.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="never-grow-uptaylor-swiftyour-little-hands-wrapped-around-my-fingerand-its-so-quiet-in-the-world-tonightyour-little-eyelids-flutter-cause-youre-dreamingso-i-tuck-you-in-and-turn-on-your-favorite-nig">
+                            5. Never Grow UpTaylor SwiftYour little hands wrapped around my fingerAnd it's so quiet in the world tonightYour little eyelids flutter cause you're dreamingSo I tuck you in and turn on your favorite nightlightTo you, everything's funnyYou got nothing to regretI'd give all I have honeyIf you could stay like thatOh darling don't you ever grow up, don't you ever grow upJust stay this littleOh darling don't you ever grow up, don't you ever grow upIt could stay this simpleI won't let nobody hurt youWon't let no one break your heartNo one will desert youJust try to never grow upNever grow up                               1. The figure "you" in the song is the singer's........​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Never Grow Up</p><p>Taylor Swift</p><p>Tangan kecilmu melingkari jariku</p><p>Dan dunia sangat sepi malam ini</p><p>Kelopak mata kecil Anda bergetar karena Anda sedang bermimpi</p><p>Jadi saya menyelipkan Anda dan mengaktifkan favorit Anda</p><p></p><p><strong>Jawaban:</strong></p><p>the singer is Taylor Swift </p><br />
+                                            <h2 class="ez-toc-section" id="combo-max-ice-cream-you-are-not-satisfied-with-the-usual-ice-cream-you-feel-just-try-combo-max-ice-cream-it-is-an-ice-cream-with-three-flavours-in-one-bite-you-do-not-need-to-buy-a-lot-of-ice-cream">
+                            6. Combo Max Ice Cream You are not satisfied with the usual ice cream you feel? Just try! Combo Max ice cream It is an ice cream with three flavours in one bite. You do not need to buy a lot of ice cream to feel a lot of ice cream. Quite simply by biting a Combo Max Ice Cream, then Chocolate, Vanilla and Milk will attack your tongue. Hmmmm Yummyyyyyy!!! 3 Collect stickers which are also available in the ice cream's pack and seize the opportunity for a vacation to Disney Land along with Ice Cream Combo Max and hundreds of other prizes that await you. The draw of the winner is until July 30, 2019. Hurry up opportunity will not come 2 times. Ice Cream Combo Max only for enthusiast delights. Questions: 1. What advertisement is this? 2. What is the purpose of the text? 3. What flavours is mix in one bite? 4. What is the grand prize for the winner? 5. How long is the promo last?tolong jwb y ,buat bsk​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1:ice cream</p><p>2:just to know ice cream </p><p>3:choclate and vanila</p><p>4;free ice cream discount</p><p>5:1day to 1 month </p><p><strong>Penjelasan:</strong></p><p>5 gak tau gak ada </p><br />
+                                            <h2 class="ez-toc-section" id="read-the-text-carefully-and-answer-the-question-a-tsunami-is-a-series-of-giant-ocean-waves-that-sends-surges-of-water-sometimes-the-waves-can-reach-heights-of-over-100-feet-so-they-can-be-the-dest">
+                            7. Read the text carefully and answer the question! A tsunami is a series of giant ocean waves that sends surges of water. Sometimes, the waves can reach heights of over 100 feet, so they can be the destructive force for the nearest area. They will successfully reach the shore and sweep everything there. Most tsunamis, about 80 percent, happen within the Pacific Ocean's "Ring of Fire", as a label for a geologically active area where tectonic shifts make volcanoes and earthquakes common. Large underwater earthquakes at tectonic plate boundaries can be potential to cause the enormous waves. It can happen when the ocean floor rises or falls suddenly. This moment leads to displace the water above it and launch the rolling waves. Besides, volcanic eruptions can also cause tsunamis because they are also potential to be earthquakes. Based on the previous cases, people usually focus on the first wave of the series only. They think the wave which is not really huge cannot be potential to be a tsunami. However, they should remember that the danger may not have passed with the first wave and should await official announcement about the condition of the vulnerable locations. "Large underwater earthquakes at tectonic plate boundaries can be potential to cause the enormous waves." (paragraph 2) The underlined word can be replaced by ....a. narrow b. petite c. giganticd. miniscule ​</h2><br />
+                        Pembahasan :<p></p><p><strong>Kata "enormous" artinya "sangat besar". Pllihan A artinya </strong></p><p><strong>Kata "enormous" artinya "sangat besar". Pllihan A artinya "sempit". Pilihan B dan D merupakan antonim dari </strong></p><p><strong>Kata "enormous" artinya "sangat besar". Pllihan A artinya "sempit". Pilihan B dan D merupakan antonim dari "enormous". Pllihan C merupakan sinonim dari </strong></p><p><strong>Kata "enormous" artinya "sangat besar". Pllihan A artinya "sempit". Pilihan B dan D merupakan antonim dari "enormous". Pllihan C merupakan sinonim dari "enormous".</strong></p><p><strong>Jadi, pilihan jawaban yang tepat adalah</strong> <strong>C, gigantic.</strong></p><p></p><p></p><p>#semoga membantu</p><p><strong>Jawaban:</strong></p><p>C.Gigantic</p><p><strong>Penjelasan:</strong></p><p>Karena dijelaskan kalau gempa hebat di dasar laut bisa menimbulkan gelombang besar</p><p>Enormous disini bermakna besar sekali </p><p>jadi yang cocok adalah Gigantic yang berarti Besar sekali.</p><p></p><p>Semoga membantu^^</p><p>#mzibraltar</p><br />
+                                            <h2 class="ez-toc-section" id="getx-flutter-2-5-ai-machine-learning-course-with-null-safety">
+                            8. GetX Flutter 2.5 Ai Machine Learning Course with Null Safety .....</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>makanya belajar saya netisen</p><p>suka lisa blekepeng</p><p>  </p><p>fuji canteekkk suka sama akyuuu paregoyy</p><p></p><p><strong>Jawaban:</strong></p><p>Kursus Pembelajaran Mesin GetX Flutter 2.5 Ai dengan Null Safety .....</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="after-the-accident-the-driver-managed-to-__-to-the-nearest-house-and-call-an-ambulancea-flatterb-flutterc-staged-staggertolong-dijawab-yaa-%e2%99%a5%ef%b8%8f">
+                            9. After the accident, the driver managed to __ to the nearest house and call an ambulance
+a. Flatter
+b. Flutter
+c. Stage
+d. Stagger
+Tolong dijawab yaa ♥️</h2><br />
+                        after the accident, the driver managed to stage go the nearest house and call an ambulanceJawabannya adalah stagger<br />
+                                            <h2 class="ez-toc-section" id="sambungan-dari-text-itu-monkeys-anxiously-await-klotok-arrivals-a-troop-of-30-light-brown-monkeys-may-plunge-from-branches-10-meters-of-higher-into-the-river-and-cross-directly-in-front-of-the-boa">
+                            10. Sambungan dari text itu: Monkeys anxiously await klotok arrivals. A troop of 30 light - brown monkeys may plunge from branches 10 meters of higher into the river and cross directly in front of the boat. These monkeys know that the boat's engine noise and the threat of its propeller scare crocodiles,which find these chubby monkeys delicious. At night, you can enjoy the clear sky and the amazingly bright stars as the only lights for the night.
+With such exotic, no wonder many tourists from foreign countries who love ecotourism frequently visit tanjung puting national park. What about you?
+Pertanyaan:
+1 How is the park different from the parks cities?
+2. How is camp leakey related to tanjung puting national park?
+3. What does the word ex-captive tell you about the orangutans in camp leakey,which is a rehabilitation site for orangutans?
+6. How can people reach camp leakey?
+JAWAB YG BENAR!</h2><br />
+                        1. Unlike any park that you may have seen in the other cities, thus park is a jungle, because its a home to the most interesting animal in the world, Orangutan.<br /><br />2. Camp Lakey is located in the heart of Tanjung Puting National Park.<br /><br />3. They anxiously wait for the klotok arrivals. Some of them may plunge from branches 10 meters over the river. The monkeys know the boat's engine noise. They are pretty aware of the crocodiles.<br /><br />6. To reach the place, we should take a boat called Klotok down Sekonyer River.<br /><br />Sorry if i'm wrong, hope you a good luck!<br />
+                                            <h2 class="ez-toc-section" id="a-complete-the-table-with-the-correct-form-of-verbverb-baseregular-verb-and-irregular-verb1-await-verb-2-verb-32-become-verb-2-verb-33-bring-verb-2-verb-34-buy-verb-2-verb">
+                            11. A.complete the table with the correct form of verbverb base:regular verb and irregular verb:1. await : verb 2? : verb 3?2. become : verb 2? : verb 3?3. bring : verb 2? : verb 3?4. buy : verb 2? : verb 3?5. cry : verb 2? : verb 3?6. die : verb 2? : verb 3?7. fall : verb 2? : verb 3?8. feel: verb 2? : verb 3?9. find: verb 2? : verb 3?10. gain : verb 2? : verb 3?11. greet : verb 2? : verb 3?12. hide : verb 2? : verb 3?13. hunt : verb 2? : verb 3?14. lie : verb 2? : verb 3?15. organize : verb 2? : verb 3? ​</h2><br />
+                        <p>2. Become</p><p>Verb 2 = Became</p><p>Verb 3 = Become</p><p>[Irregular Verb]</p><p></p><p>3. Bring (Membawa)</p><p>Verb 2 = Brought</p><p>Verb 3 = Brought</p><p>[Irregular Verb]</p><p></p><p>4. Buy (Membeli)</p><p>Verb 2 = Bought</p><p>Verb 3 = Bought</p><p>[Irregular Verb]</p><p></p><p>5. Cry (Menangis)</p><p>Verb 2 = Cried</p><p>Verb 3 = Cried</p><p>[Irregular Verb]</p><p></p><p>7. Fall (Terjatuh)</p><p>Verb 2 = Fell</p><p>Verb 3 = Fallen</p><p>[Irregular Verb]</p><p></p><p>8. Feel (Merasakan)</p><p>Verb 2 = Felt</p><p>Verb 3 = Felt</p><p>[Irregular Verb]</p><p></p><p>9. Find (Menemukan)</p><p>Verb 2 = Found</p><p>Verb 3 = Found</p><p>[Irregular Verb]</p><p></p><p>12. Hide (Sembunyi)</p><p>Verb 2 = Hid</p><p>Verb 3 = Hidden</p><p>[Irregular Verb]</p><p></p><p>14. Lie (Berbohong)</p><p>Verb 2 = Lay</p><p>Verb 3 = Lain</p><p>[Irregular Verb]</p><p></p><p>~~~~~~~~~~~~~~~~~~~~~~~~</p><p>Disebut Irregular Verb Jika Verb 2 dan Verb 3 Tidak beraturan/Berubah. For Example: eat - ate - eaten</p><p></p><p>Disebut Regular Verb jika Verb 2 dan Verb 3 Beraturan, biasanya diakhiri kata "ed". For example: help - helped - helped</p><p></p><p>======================</p><p><strong>D</strong><strong>e</strong><strong>t</strong><strong>a</strong><strong>i</strong><strong>l</strong><strong> </strong><strong>J</strong><strong>a</strong><strong>w</strong><strong>a</strong><strong>b</strong><strong>a</strong><strong>n</strong></p><p>Mapel : English Languange</p><p>Jenjang : SMP</p><p>Kode Soal : 5</p><p>Materi : Regular and Irregular Verb</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-memo-pesan-singkat-berikut-ini-1-the-students-association-chairperson-reminds-a-member-to-attend-the-monthly-meeting-it-will-be-held-at-0200-p-m-in-the-school-hall2-the-librarian-re">
+                            12. buatlah memo/ pesan singkat, berikut ini :
+1. the students' association chairperson reminds a member to attend the monthly meeting. it will be held at 02:00 p.m. in the school hall
+2. the librarian reminds a student to return the story book he/she has borrowed. other students await to borrow it
+3. the headmistress infroms the duty-teacher that she may be hack late from her out of town trip. the staff meeting is rescheduled to the following day.
+4. there was a phone call for the geography teacher while she was teaching. the administration staff infroms her about it</h2><br />
+                        1. To all members of accociatons chairperson. Please attend a meeting monthly it will be held at 2.00 p.m at school hall. <br />
+                                            <h2 class="ez-toc-section" id="bisakah-menerjemahkan-puisi-ini-kedalam-bahasa-indonesia-dream-of-a-floating-boatwhere-it-heads-to-the-ship-of-truth-still-longs-for-the-unseen-dawn-flutter-your-dream-and-carry-your-sorrow">
+                            13. Bisakah menerjemahkan puisi ini kedalam bahasa indonesia ?
+Dream of a floating Boat
+Where it heads to ? 
+The ship of truth. 
+Still longs for the unseen dawn. 
+Flutter your dream and carry your sorrow. 
+Set forth with your passionate will ! 
+As if defying the strong current of a river,
+You just seem to want to move forward without realizing that,
+I want to follow you even if I can't see what's ahead. 
+While believing in the faraway end of the strong torrent. 
+In the emptiness of darkness,
+In the wandering night,
+I want to light a faint flame in my tiny hand ! 
+Where it heads to ? 
+The blue ship. 
+Heads for the invisible tomorrow. 
+Risk your life and everything else in the search for the great distant land. 
+Makasih...</h2><br />
+                        Bermimpi Boat mengambang<br /><br />Mana kepala ke?<br />Kapal kebenaran.<br />Masih merindukan fajar tak terlihat.<br />Bergetar impian Anda dan membawa kesedihan Anda.<br />Ditetapkan dengan kehendak gairah Anda!<br /><br />Seolah-olah menentang arus kuat dari sungai,<br />Anda hanya tampaknya ingin bergerak maju tanpa menyadari bahwa,<br />Saya ingin mengikuti Anda bahkan jika saya tidak bisa melihat apa yang di depan.<br />Sementara percaya akhir yang jauh dari torrent yang kuat.<br /><br />Dalam kekosongan kegelapan,<br />Di malam mengembara,<br />Saya ingin menyalakan api samar di tangan kecil saya!<br /><br />Mana kepala ke?<br />Kapal biru.<br />Kepala untuk besok tak terlihat.<br />Risiko hidup Anda dan segala sesuatu yang lain dalam mencari tanah yang jauh besar.Bermimpi Boat mengambang<br /><br />Mana kepala ke?<br />Kapal kebenaran.<br />Masih merindukan fajar tak terlihat.<br />Bergetar impian Anda dan membawa kesedihan Anda.<br />Ditetapkan dengan kehendak gairah Anda!<br /><br />Seolah-olah menentang arus kuat dari sungai,<br />Anda hanya tampaknya ingin bergerak maju tanpa menyadari bahwa,<br />Saya ingin mengikuti Anda bahkan jika saya tidak bisa melihat apa yang di depan.<br />Sementara percaya akhir yang jauh dari torrent yang kuat.<br /><br />Dalam kekosongan kegelapan,<br />Di malam mengembara,<br />Saya ingin menyalakan api samar di tangan kecil saya!<br /><br />Mana kepala ke?<br />Kapal biru.<br />Kepala untuk besok tak terlihat.<br />Risiko hidup Anda dan segala sesuatu yang lain dalam mencari tanah yang jauh besar<br /><br />
+                                            <h2 class="ez-toc-section" id="please-briefly-explain-the-steps-of-writing-a-flutter-apps">
+                            14. Please briefly explain the steps of writing a flutter apps?</h2><br />
+                        <p>To start with flutter you need to have basic understanding of Dart programming language. For that you can take the tutorial on Tutorials Point.</p><p></p><p>When you are confident enough you can start with dart. Flutter's official documentation is good enough to get started. Here,</p><p>1) Building layouts using Flutter’s layout mechanism. </p><p>2) Adding interactivity to your Flutter app, you’ll extend the simple layout app created in “Building Layouts in Flutter” to make an icon tappable. </p><p>3) Animations in Flutter, as it guides you through a progression of tween animations using different aspects of the animation APIs.</p><p>4) Internationalizing Flutter apps. A guide through the widgets and classes that enable apps to display their content using the user’s language and formatting conventions.</p><p></p><p>Sorry if this isn't brief enough</p><br />
+                                            <h2 class="ez-toc-section" id="if-a-company-build-a-mobile-application-using-flutter-describe-its-benefits-justify-the-answers">
+                            15. If a company build a mobile application using flutter, describe its benefits?. Justify the answers.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Native method, we can use native programming language that is owned / supported by the platform provider. Like Java &amp; Kotlin for Android. And Objective-C &amp; Swift for iOS.</p><p>Hybrid method, we can use the Web programming language (HTML, CSS, Javascript). For example, using the React Native framework, Nativescript (Angular).</p><p><strong>Penjelasan:</strong></p><p>I hope this helps</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-memo-pesan-singkat-berikut-ini-1-the-students-association-chairperson-reminds-a-member-to-attend-the-monthly-meeting-it-will-be-held-at-0200-p-m-in-the-school-hall2-the-librarian-re">
+                            16. buatlah memo/ pesan singkat, berikut ini :
+1. the students' association chairperson reminds a member to attend the monthly meeting. it will be held at 02:00 p.m. in the school hall
+2. the librarian reminds a student to return the story book he/she has borrowed. other students await to borrow it
+3. the headmistress infroms the duty-teacher that she may be hack late from her out of town trip. the staff meeting is rescheduled to the following day.
+4. there was a phone call for the geography teacher while she was teaching. the administration staff infroms her about it</h2><br />
+                        1. dont forget to attend the monthly meeting at 02.00 pm in thd school hall -chairperson<br />2. return the story book he/she has borrowed cause othe students await to borrow it -student<br />
+                                            <h2 class="ez-toc-section" id="b-arranges-thesentencesareai-the-labour-the-students-observingubout-ex-permet2student-the-notionservation-the-guide-theinvites-on3the-resolat-ergondin-await-the-student4thecleaner-well-wor">
+                            17. B arranges thesentencesareaI the labour - the Students - observingUbout - ex permet,2Student - the notionservation.The guide - theinvites-on3the resolat ergondin.await-the student4Thecleaner -well-worus-the job-on5some experiments-done-by- the scientis- Carlo​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. I the labour observing ubout the students ex permet</p><p></p><p></p><p><strong>#</strong><strong>G</strong><strong>o</strong><strong>o</strong><strong>d</strong><strong> </strong><strong>luck</strong></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="the-traveling-in-the-boat-offers-an-unforgettable-experience-in-daylight-on-your-way-to-camp-leakey-you-can-see-trees-filled-with-proboscis-monkeys-monkeys-that-have-an-enormous-snout-which-can-on">
+                            18. The traveling in the boat offers an unforgettable experience. In daylight, on your way to Camp Leakey, you can see trees filled with proboscis monkeys, monkeys that have an enormous snout which can only be found in Kalimantan. The monkeys anxiously await klotok arrivals. A troop of 30 light-brown monkeys may plunge from branches 10 meters or higher into the river and cross directly in front of the boat. These monkeys know that the boat’s engine noise and the threat of its propeller scare the crocodiles, which find these chubby monkeys delicious. At night, you can enjoy the clear sky and the amazingly bright stars as the only lights for the night.
+What is the main idea of this paragraph?
+ A. Klotok arrivals
+B. the threat of crocodiles
+C. the trip to Camp Leakey
+D. boathouse called 'klothok'
+ E. Proboscis monkeys</h2><br />
+                        <p><strong>E. Proboscis monkeys</strong></p><p><strong></strong></p><p>since, most of the paragraf it talks about the details of the monkey.</p><p></p><p>semoga membantu // hope this helps!</p><br />
+                                            <h2 class="ez-toc-section" id="never-grow-uptaylor-swiftyour-little-hands-wrapped-around-my-fingerand-its-so-quiet-in-the-world-tonightyour-little-eyelids-flutter-cause-youre-dreamingso-i-tuck-you-in-and-turn-on-your-favorite-nig">
+                            19. Never Grow UpTaylor SwiftYour little hands wrapped around my fingerAnd it's so quiet in the world tonightYour little eyelids flutter cause you're dreamingSo I tuck you in and turn on your favorite nightlightTo you, everything's funnyYou got nothing to regretI'd give all I have honeyIf you could stay like thatOh darling don't you ever grow up, don't you ever grow upJust stay this littleOh darling don't you ever grow up, don't you ever grow upIt could stay this simpleI won't let nobody hurt youWon't let no one break your heartNo one will desert youJust try to never grow upNever grow upPertanyaan ;                                                                               1. The figure 'you" in the song is the singer's ....2. From the third paragraph, the singer wants to always ... you from disturbances.TOLONG JAWAB DENGAN BENAR DAN TELITI Trimakasih​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Baby</p><p>2. Protect</p><p></p><p>maap kalau salah :p</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="gangguan-ritme-berupa-kelainan-dalam-frekuensi-kecepatan-denyut-jantung-karena-serambil-atrium-dan-bilik-ventrikel-berdenyut-lebih-cepat-tachycardia-atau-lebih-lambat-bradycardia-dari-normal">
+                            20. Gangguan ritme berupa kelainan dalam frekuensi (kecepatan) denyut jantung karena serambil (atrium) dan bilik (ventrikel) berdenyut lebih cepat (tachycardia) atau lebih lambat (bradycardia) dari normal. Dapat pula karena terjadinya kekacauan dalam ritme (irama) denyutan jantung, misalnya vibrasi (flutter), getaran (fibrilasi) ataupun extrasistole. Kondisi tersebut termasuk ke dalam…</h2><br />
+                        aritmia?<br /><br />maaf kalau salah tp setau aku gangguan irama/ritme jantung itu aritmia. semoga membantu ya.<br />
+                                            <h2 class="ez-toc-section" id="di-bantu-translate-ke-bhsa-indonesia-bed-time-story-im-gonna-tell-my-grand-kids-30-years-from-nowonce-upon-a-time-king-ronaldo-conquer-the-world-and-decided-to-rest-for-a-year-and-decided-to-let-pri">
+                            21. di bantu translate ke bhsa Indonesia  Bed time story im gonna tell my grand kids 30 years from nowOnce upon a time, King Ronaldo conquer the world and decided to rest for a year and decided to let Prince Messi take over. After a whole year of hibernation and rest, king Ronaldo decided to wake up. He wasnt happy about the performance of Prince Messi after he failed to conquer the Copa America. King Ronaldo decided to conquer Europe with his Elite Soldiers from Real Madrid then went ahead and conquer it again with his other troops from Portugal. Even he was badly hurt in the Euro finals, his leadership and enthusiasm carried the whole team and crown King Ronaldo the best! Prince Messi was crying after he heard the news. Another Challenge awaits in the Club World Cup were a team from America and from the far east await! King Ronaldo slay Club America with him giving the final blow and slay the Mighty Japanese team Antlers with 3 deadly strikes and became the King of club world cup yet again while Prince Messi and his Barcelona boys are devastated to hear the news. King Ronaldo  is truly cementing his greatness after another astonishing year! I would love to finish this story my grandson but thats for another night. To be continued....</h2><br />
+                        Waktu tidur cerita aku akan memberitahu anak-anak besar saya 30 tahun dari sekarang<br />Sekali waktu, Raja Ronaldo menaklukkan dunia dan memutuskan untuk beristirahat selama satu tahun dan memutuskan untuk membiarkan Pangeran Messi mengambil alih. Setelah satu tahun dari hibernasi dan istirahat, raja Ronaldo memutuskan untuk bangun. Dia Bukankah bahagia tentang kinerja Pangeran Messi setelah ia gagal menaklukkan Copa America. Raja Ronaldo memutuskan untuk menaklukkan Eropa dengan Tentara Elite dari Real Madrid kemudian pergi ke depan dan menaklukkan lagi dengan pasukannya lainnya dari Portugal. Bahkan ia terluka parah di putaran final Euro, kepemimpinan dan antusiasme dilakukan seluruh tim dan mahkota Raja Ronaldo yang terbaik! Pangeran Messi menangis setelah ia mendengar kabar itu. Lain Tantangan menanti di Piala Dunia Klub adalah tim dari Amerika dan dari timur jauh menunggu! Raja Ronaldo membunuh Club America dengan dia memberikan pukulan terakhir dan membunuh Antlers tim Jepang Perkasa dengan 3 pemogokan mematikan dan menjadi Raja klub piala dunia belum lagi saat Pangeran Messi dan anak laki-laki Barcelona nya hancur mendengar berita. Raja Ronaldo benar-benar penyemenan kebesarannya demi tahun mencengangkan lagi! Aku akan senang untuk menyelesaikan cerita ini cucu saya tapi itu untuk satu malam. Bersambung<br />
+                                            <h2 class="ez-toc-section" id="5-complete-the-letters-with-the-words-in-the-boxes-letter-1-you-to-attend-a-special-benefit-will-go-the-heidrich-literacy-council-performance-featuring-the-famous-comedian-stefan-heidrich-all-towa">
+                            22. 5. Complete the letters with the words in the boxes. Letter 1 you to attend a special benefit will go The Heidrich Literacy Council performance featuring the famous comedian, Stefan Heidrich. All towards next year's literacy campaign. You may already know that the Heidrich Literacy Council has taught over 1,000 adults in the Springfield you didn't know that we also and private schools to improve their libraries. to read and write each year since 2001. But perhaps thousands of dollars every year to public You can contribute to these efforts by purchasing a ticket to the benefit performance, which will be on May 9th at 8 p.m. in the Springfield High School auditorium. The cost of the tickets is only $15.00 per person. is a mail order form for your tickets. Please specify the number of tickets you desire and enclose a check for the appropriate amount. If you cannot attend but you would still like to make a donation, we will receive it. We eagerly await your a. proceeds b. gratefully invites reply donate enclosed C. d. e. 9. h. area held​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>5. Lengkapi huruf dengan kata-kata di dalam kotak. Surat 1 Anda untuk menghadiri manfaat khusus akan pergi Kinerja Dewan Literasi Heidrich menampilkan komedian terkenal, Stefan Heidrich. Semua menuju kampanye literasi tahun depan. Anda mungkin sudah tahu bahwa Heidrich Literacy Council telah mengajar lebih dari 1.000 orang dewasa di Springfield Anda tidak tahu bahwa kami juga dan sekolah swasta untuk meningkatkan perpustakaan mereka. membaca dan menulis setiap tahun sejak 2001. Tapi mungkin ribuan dolar setiap tahun untuk umum Anda dapat berkontribusi pada upaya ini dengan membeli tiket pertunjukan amal, yang akan diadakan pada 9 Mei pukul 8 malam. di auditorium SMA Springfield. Harga tiketnya hanya Rp15 ribu per orang. adalah formulir pemesanan melalui pos untuk tiket Anda. Harap tentukan jumlah tiket yang Anda inginkan dan lampirkan cek untuk jumlah yang sesuai. Jika Anda tidak dapat hadir tetapi Anda masih ingin memberikan donasi, kami akan menerimanya. Kami dengan sabar menunggu a. hasil b. dengan hormat mengundang balasan donasi terlampir C. d. e. 9. jam. daerah diadakan</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="tolong-dijawabsoal-bahasa-inggris-pilihan-jawabanlopeflitcrawlhopflylumberclimbscamperwanderglideslitherrunfriskdiveboundwaddlefluttertolong-dijawab-plissssbuat-hari-initerimakasih">
+                            23.  tolong dijawab,soal bahasa inggris pilihan jawaban:lope,flit,crawl,hop,fly,lumber,climb,scamper,wander,glide,slither,run,frisk,dive,bound,waddle,fluttertolong dijawab plissss,buat hari iniTERIMAKASIH​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>monkey adalh monyet</p><p>rabbit adalh kelinci</p><p>apes adalh swin</p><br />
+                                            <h2 class="ez-toc-section" id="sebagai-seorang-yang-ahli-dalam-bidang-pemrograman-anda-mendapat-pesanan-untuk-membuat-aplikasi-inventori-barang-yang-dapat-bekerja-pada-platform-android-dan-ios-dengan-anggaran-15-juta-rupiah-dari">
+                            24. Sebagai seorang yang ahli dalam bidang pemrograman, anda mendapat pesanan untuk membuat aplikasi inventori barang yang dapat bekerja pada platform Android dan IOS. Dengan anggaran 15 juta rupiah dari pemesan, bahasa pemrograman yang sebaiknya Anda gunakan adalah...A. FlutterB. LaravelC. IOS StudioD. CodelgniterE. Android Visual Studio ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Untuk mengembangkan aplikasi inventori barang yang dapat berjalan pada platform Android dan iOS dengan anggaran 15 juta rupiah, bahasa pemrograman yang sebaiknya Anda gunakan adalah **A. Flutter**. Flutter adalah kerangka kerja (framework) pengembangan aplikasi berbasis kode sumber terbuka yang dapat digunakan untuk membuat aplikasi Android dan iOS dengan menggunakan bahasa pemrograman Dart. Flutter dapat membantu Anda menghemat waktu dan upaya dalam mengembangkan aplikasi yang dapat berjalan di kedua platform tersebut.</p><br />
+                                            <h2 class="ez-toc-section" id="tolong-buatin-memo-donk-dengan-situasi-berikut-the-librarian-reminds-a-student-to-return-the-story-book-heshe-has-borrowed-other-students-await-to-borrow-it">
+                            25. tolong buatin memo donk.. dengan situasi berikut        the librarian reminds a student to return the story book he/she has borrowed.other students await to borrow it </h2><br />
+                        to : student<br />        to student in this school,please return the story book.because an other student await to borrow that book<br />                                         from:librarian<br />
+                                            <h2 class="ez-toc-section" id="is-popularly-called-perahu-kook-which-is-thefour-takes-three-days-and-two-nights-you-sleep-sk-and-anight-and-day-during-your-journey-into-the-jungethe-traveling-in-the-boat-offers-an-unforgettable-c">
+                            26. is popularly called perahu kook which is thefour takes three days and two nights. You sleep.sk, and anight and day during your journey into the jungeThe traveling in the boat offers an unforgettable creence, la daton your way to Camp Leakey, you can see trees filled with prois moismonkeys that have an enormous snout which can only be found in KThe monkeys anxiously await klotok arrivals. A troop ofmonkeys may plunge from branches 10 meters or higher into the river menosdirectly in front of the boat. These monkeys know that the bea's engine isand the threat of its propeller scare the crocodiles, which find these daymonkeys delicious. At night, you can enjoy the clear sky and the amazinglybright stars as the only lights for the night​</h2><br />
+                        <p>Yang populer disebut Perahu Kook yang berumur empat hari demi hari dan dua malam. Anda tidur. Dan, dan malam hari dalam perjalanan Anda ke Junge bepergian di kapal menawarkan kreevan yang tak terlupakan, La Dat dalam perjalanan Anda ke Camp Leakey, Anda dapat melihat pohon yang dipenuhi dengan monyet prois Mois yang memiliki moncong yang sangat besar yang hanya dapat ditemukan di K. Monyet dengan cela menyajikan kedatangan Klotok. Sebuah pasukan monyet dapat terjun dari cabang 10 meter atau lebih tinggi ke sungai mendos langsung di depan perahu. Monkeys ini tahu bahwa mesin Bea itu dan ancaman baling-balingnya menakut-nakuti buaya, yang menemukan monyet hari ini lezat. Pada malam hari, Anda bisa menikmati langit yang jernih dan bintang yang luar biasa terang seperti satu-satunya lampu untuk malam ini</p><br />
+                                            <h2 class="ez-toc-section" id="build-a-social-network-with-flutter-and-firebase">
+                            27. Build a social network with flutter and firebase !</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Make a complete mobile social media app like Twitter, Instagram or Facebook using Flutter and Firebase!</p><p>What you’ll learn</p><p></p><p>How to build a complete social network with Flutter and Firebase!</p><p>Requirements</p><p>Basic familiarity with Flutter</p><p>Experience with Firebase / Firestore is helpful, but not required</p><p>Description</p><p>Do you want to build a complete social network mobile app just like Facebook, Instagram or Twitter? This is the course for you!</p><p></p><p>WHAT WILL WE BE BUILDING?</p><p></p><p>In this course, we’ll use the best in Flutter and Firebase to build a complete social network from zero to deployment called FlutterShare that you can release on the Google Play Store or iOS App Store.</p><p></p><p>WHAT DOES THE APP FEATURE?</p><p></p><p>An Amazing Realtime Social Network App</p><p>A Timeline just like in Facebook, Instagram, or Twitter</p><p>An Activity Feed for all User Interactions</p><p>Live In-App User Notifications</p><p>Media Sharing between Users </p><p>User Following / Unfollowing (with past / future posts added to timeline)</p><p>Realtime Messaging, Liking and Unliking for Posts</p><p>Profile Customization (i.e. Display Name, User Bio, etc)</p><p>Social Login with Google</p><p>Using Device Camera for Image Uploads</p><p>Captioning Posts with Description and Current Location (Geolocation)</p><p>Finding other App Users with Full-Text Search</p><p>WHAT CONCEPTS ARE COVERED?</p><p></p><p>A Complete Masterclass on Firebase / Firestore with Flutter </p><p>Uploading Media Files with Firebase Storage + Image Compression Techniques </p><p>Google SignIn / Social Login with Flutter </p><p>Push Notifications with Firebase Messaging for Realtime User Updates </p><p>Taking Pictures / Picking Images for Upload with Flutter </p><p>Detecting User Location with Geolocation for Flutter </p><p>Build and Deploy (many) Firebase Functions </p><p>Complete CRUD Functionality in Realtime with Cloud Firestore </p><br />
+                                            <h2 class="ez-toc-section" id="question-1decide-if-the-verb-in-brackets-need-to-or-without-to-tentukan-apakah-verb-yg-ada-di-dalam-kurung-perlu-menggunakan-to-atau-tanpa-to1-she-makes-him-do-_____-everything-she-wants-2-e">
+                            28. Question 1
+Decide if the verb in brackets need to or without to. (Tentukan apakah verb yg ada di dalam kurung perlu menggunakan TO atau tanpa TO)
+1. She makes him (do) _____ everything she wants.
+2. Every driver must (take) _____ an examination.
+3. It is better (go) _______ away than to stay.
+4. We stood waiting for him (recover) _____.
+5. I felt the floor (tremble) _____.
+6. It was decided (await) _____ his reply.
+7. I watched him (go) _____ down the path.
+8. I will let him (know) _____ you are here.
+9. I don't see what he can (gain) _____ by it.
+10. The magistrate warned him (not / do) _____ it again.</h2><br />
+                        <p>1. She makes him do everything she wants.</p><p></p><p>2. Every driver must take an examination.</p><p></p><p>3. It is better to go away than to stay.</p><p></p><p>4. We stood waiting for him to recover .</p><p></p><p>5. I felt the floor tremble .</p><p></p><p>6. It was decided to await his reply.</p><p></p><p>7. I watched him go down the path.</p><p></p><p>8. I will let him know you are here.</p><p></p><p>9. I don't see what he can gain by it.</p><p></p><p>10. The magistrate warned him not to do it again.</p><p></p><p>11. I hope you will soon be better.</p><p></p><p>12. I still don't know where to go for my next holiday.</p><p></p><p>13. We'd better be going back.</p><br />
+                                            <h2 class="ez-toc-section" id="cleaning-a-blender-is-easy-but-it-can-be-hard-if-you-dont-clean-it-immediately-after-you-use-it-even-if-you-dont-have-the-time-to-clean-it-immediately-after-use-at-least-pour-in-this-simple-clea">
+                            29. Cleaning a blender is easy, but it can be hard if you don't clean it immediately after you use it. Even if you don't have the time to clean it immediately after use, at least, pour in this simple cleaning mixture to await your return later.
+1) Ensure that the blender jug is sitting on the base properly before proceeding.
+2) Fill the jug half full with warm water.
+3) Add one to two drops of dish-washing liquid; if you have a lemon, put in half a lemon, as the lemon rind will scrape off any particles and the juice and rind will eliminate odours.
+4) Place the lid on the blender.
+5) Plug the blender back into the electrical socket or switch the power point on.
+6) Press the low blend button and allow to blend for up to 30 seconds.
+7) Check that it has caught all the particles.
+8) Pour the liquid down the sink.
+9) Rinse under the faucet.
+10) Place upside down on a dish rack to dry.
+We should ... before turning on the blender.
+Select one:
+a. rinse it under the faucet
+b. place the lid on
+c. pour the water down the sink
+d. dry it</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>b. Place the lid on</p><p></p>Semoga membantu (ノ^o^)ノ<p></p><br />
+                                            <h2 class="ez-toc-section" id="to-sarahhappy-graduationyou-are-a-big-sister-who-i-always-look-up-tocongratulations-on-your-graduation-may-bright-futureawait-you-keep-working-hard-and-keep-on-dreaminglovezara14-the-card-is-wri">
+                            30. To: SarahHappy Graduation!You are a big sister who I always look up toCongratulations on your graduation! May bright futureawait you. Keep working hard and keep on dreamingLove,Zara14. The card is written to congratulate one'sA. victoryB. birthdayC. recoveryD. achievement 15. What has Sarah done?A. She has finished her studies.B. She has been a reliable sister.C. She has achieved her dreams.D. She comes first at school.16. Zara hopes that Sarah willA. have a sweet dreamB. always work hardC. always make her proudD. study hard for her exams​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>15.B</p><p>Maaf klo salah.....:)</p>14. D (victory)<br />15. A (she has finished her studies)<br />16. B (always work hard)<br />
+                                            <h2 class="ez-toc-section" id="benarkah-flutter-bahasa-pemprograman-yg-di-kembangkan-oleh-google">
+                            31. Benarkah Flutter bahasa pemprograman yg di kembangkan oleh google..??</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>benar</p><p><strong>Penjelasan:</strong></p><p>Flutter adalah sebuah framework aplikasi mobil sumber terbuka yang diciptakan oleh Google. Flutter digunakan dalam pengembangan aplikasi untuk sistem operasi Android dan iOS, serta menjadi metode utama untuk membuat aplikasi Google Fuchsia.[4]</p><p>benar sekali kmu pintar ya</p><br />
+                                            <h2 class="ez-toc-section" id="1-2-irre-irregular-verbs-do-not-follow-example-come-came-give-gave-draw-drew-exercise-do-the-tasks-below-task-1-complete-the-sentences-by-changing-the-verb-in-the-brackets-to-simple-past-tense">
+                            32. 1. 2. Irre Irregular verbs do not follow Example: Come came Give gave Draw - drew Exercise Do the tasks below! Task 1 Complete the sentences by changing the verb in the brackets to simple past tense! the Indonesian's independence history in the radio. (listen) it very much. (enjoy) to disturb her. (not/want) (laugh) into the room. (flutter) 1. I 2. The sack race was very exciting. I 3. Sarah was very busy yesterday, so l 4. It was a funny situation but nobody 5. The window was open, so a bird 6. We 7. My sister 8. My tandem race team 9. The band 10. Roy and Ryan Go-went Buy-bought Run - ran 8 GP &gt;&gt;&gt; in the parade last year. (not/participate my grandparents three weeks ago. (vis the game last month. (not/w the traditional musical instruments skilfully. the panjat pinang yesterday. (no Bahasa Inggris VIII​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Remember simple pas tense form is S + v2 + object. So you must change all sentences to v2 </p><p></p><p>She eats an apple &gt;&gt; Simple Present Tense </p><p></p><p>She ate an apple &gt;&gt; Simple Past Tense</p><p></p><p>(eats become ate) </p><p></p><p>He studies English &gt;&gt; Simple Present Tense</p><p>He studied English &gt;&gt; Simple Past Tense</p><p></p><p>(studies become studied) </p><p></p><p>All you need to do just change the verb 1 to verb 2. If you get confused about v2, you can check on google or dictionary. </p><p></p><p>(-) </p><p>She did not study English</p><p>He didn't study Math </p><p></p><p>You should add (did + not) for negative sentences and remember after you add (did + not) the verb 2 become v1 which is normal verb. </p><p></p><p>Did not and didn't it's same. </p><p></p><p>(?) </p><p>Did she study English? </p><p>Did he study English? </p><p></p><p>In interrogative, you should add (did) in front of pronoun which is she and he and the verb is normal (v1) </p><p></p><p>After this, you can do your tasks by yourself. Don't be lazy mate! I just give you the tense form. </p><p></p><p>Conclusion : </p><p>1. In positive sentences, you should change the verb to verb2 like eat becomes ate, work becomes worked, go becomes went. Just remember about the verb. </p><p></p><p>2. In negative sentences, you should add (did + not) in the middle of sentence structure and remember the verb goes back to verb1 which is normal verb</p>She ate a pizza &gt;&gt; She did not eat a pizzaHe spoke English &gt;&gt; He did not speak English<p></p><p>Do you see the difference between them? hopefully you do. </p><p></p><p>3. In interrogative sentences, you should add (did) in front of pronoun (She, He, It, I, You, They, We) and the verb is normal which is verb1. </p>She learned English &gt;&gt; Did she learn English? <p></p><p></p><p>Hopefully this answer will help you, Cheer up mate! </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="arti-dari-i-miss-you-when-you-are-not-near-mei-long-to-hear-your-steps-thats-by-far-the-sweetest-music-my-ears-await-everyday">
+                            33. arti dari I miss you when you are not near me,i long to hear your steps.that's by far the sweetest music my ears await everyday</h2><br />
+                        Saya merindukan kamu saat kamu tidak di dekat saya, saya rindu mendengar langkah-langkah kamu,  yang sejauh ini adalah music termanis yang telinga saya tunggu tunggu setiap hari<br />
+                                            <h2 class="ez-toc-section" id="the-traveling-in-the-boat-offers-an-unforgettable-experience-in-daylight-on-your-way-to-camp-leakey-you-can-see-trees-filled-with-proboscis-monkeys-monkeys-that-have-an-enormous-snout-which-can-on">
+                            34. The traveling in the boat offers an unforgettable experience. In daylight, on your way to Camp Leakey, you can see trees filled with proboscis monkeys, monkeys that have an enormous snout which can only be found in Kalimantan. The monkeys anxiously await klotok arrivals. A troop of 30 light-brown monkeys may plunge from branches 10 meters or higher into the river and cross directly in front of the boat. These monkeys know that the boat's engine noise and the threat of its propeller scare the crocodiles, which find these chubby monkeys delicious. At night, you can enjoy the clear sky and the amazingly bright stars as the only lights for the night. What is the main idea of this paragraph? A. Klotok arrivals B. The threat of crocodiles C. The trip to Camp Leakey D. Boathouse called 'klothok' E. Proboscis monkeys</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>C. The trip to camp Leakey</p><p><strong>Penjelasan:</strong></p><p>Karena diceritanya dia sedang berlibur ke Camp Leaky</p><p>Semoga Membantu </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="completet-the-sentences-by-changing-the-verb-in-the-brackets-to-simple-past-tense1-i-the-indonesians-independence-history-in-the-radio-listen2-the-sack-race-was-very-esciting-i-it-ve">
+                            35. Completet the sentences by changing the verb in the brackets to simple past tense1.i.........the indonesian's independence history in the radio (listen)2.the sack race was very esciting.i........it very much (enjoy)3.sarah was very busy yesterday,so i.......... to disturb her. (not/want)4.it was funny. situation but nobody............(laugh)5.the window was open, so a bird........intothe room.(flutter)​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>1. I listened to the Indonesian's independence history on the radio.</p><p>2. The sack race was very exciting. I enjoyed it very much.</p><p>3. Sarah was very busy yesterday, so I did not want to disturb her.</p><p>4. It was a funny situation, but nobody laughed.</p><p>5. The window was open, so a bird fluttered into the room.</p><p>By Imam Sahroni Darmawan</p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-lirik-lagu-flutter-dan-terjemahan-nya%e2%80%8b">
+                            36. tuliskan lirik lagu flutter dan terjemahan nya!​</h2><br />
+                        <p></p><p>To the edge</p><p>Ke tepi</p><p>Til we all get off</p><p>Kita semua akan turun</p><p>I will take you away with me</p><p>Aku akan membawamu pergi bersamaku</p><p>Once and for all</p><p>Sekali dan untuk semua</p><p></p><p>Time will see us realign</p><p>Waktu akan melihat kita menyetel kembali</p><p>Diamonds rain across the sky</p><p>Berlian lebat melintasi langit</p><p>Shower me into the same realm</p><p>Mandi saya ke alam yang sama</p><p></p><p></p><p>Calculate I’ll embrace</p><p>Hitung aku akan merangkul</p><p>Hold on, come with me now</p><p>Tunggu, ikut aku sekarang juga</p><p>Run away outer space with me</p><p>Lariilah angkasa luar dengan saya</p><p>Once and for all</p><p>Sekali dan untuk semua</p><p></p><p></p><p>Time will see us realign</p><p>Waktu akan melihat kita menyetel kembali</p><p>Diamonds rain across the sky</p><p>Berlian lebat melintasi langit</p><p>Shower me into the same realm</p><p>Mandi saya ke alam yang sama</p><p></p><p></p><p>Time will see us realign</p><p>Waktu akan melihat kita menyetel kembali</p><p>Diamonds rain across the sky</p><p>Berlian lebat melintasi langit</p><p>I will lead us to the same realm</p><p>Saya akan membawa kita ke dunia yang sama</p><p></p><p></p><p>Get Set!</p><p>Dapatkan Set!</p><p></p><p></p><p>When the coffin shakes</p><p>Saat peti mati bergetar</p><p>And the needle breaks</p><p>Dan jarumnya pecah</p><p>Come run away with me</p><p>Ayo kabur dengan saya</p><p>Come on you’ll see</p><p>Ayo kamu lihat</p><p>Once and for all</p><p>Sekali dan untuk semua</p><p></p><p></p><p>Time will see us realign</p><p>Waktu akan melihat kita menyetel kembali</p><p>Diamonds rain across the sky</p><p>Berlian lebat melintasi langit</p><p>Shower me into the same realm</p><p>Mandi saya ke alam yang sama</p><p></p><p></p><p>Time will lead us to the same realm</p><p>Waktu akan membawa kita ke dunia yang sama</p><p>I will lead us to the same realm</p><p>Saya akan membawa kita ke dunia yang sama</p><br />
+                                            <h2 class="ez-toc-section" id="question-1-decide-if-the-verb-in-brackets-need-to-or-without-to-tentukan-apakah-verb-yg-ada-di-dalam-kurung-perlu-menggunakan-to-atau-tanpa-to-1-she-makes-him-do-_____-everything-she-wants-2-e">
+                            37. question 1 decide if the verb in brackets need to or without to. (tentukan apakah verb yg ada di dalam kurung perlu menggunakan to atau tanpa to) 1. she makes him (do) _____ everything she wants. 2. every driver must (take) _____ an examination. 3. it is better (go) _______ away than to stay. 4. we stood waiting for him (recover) _____. 5. i felt the floor (tremble) _____. 6. it was decided (await) _____ his reply. 7. i watched him (go) _____ down the path. 8. i will let him (know) _____ you are here. 9. i don't see what he can (gain) _____ by it. 10. the magistrate warned him (not / do) _____ it again.</h2><br />
+                        <p>Jawaban:</p><p>1. She makes him do everything she wants. </p><p>2. Every driver must take an examination. </p><p>3. It is better to go away than to stay. </p><p>4. We stood waiting for him to recover. </p><p>5. I feel the floor tremble. </p><p>6. It was decided to await his reply. </p><p>7. I watched him go down the path.</p><p>8. I will let him know you are here. </p><p>9. I don't see what he can gain by it. </p><p>10. The magistrate warned him not to do it again. </p><br />
+                                            <h2 class="ez-toc-section" id="explain-about-the-future-class-in-flutter">
+                            38. Explain about the future class in flutter.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>b</strong><strong>a</strong><strong>c</strong><strong>a</strong><strong> </strong><strong>d</strong><strong>i</strong><strong>b</strong><strong>a</strong><strong>w</strong><strong>a</strong><strong>h</strong><strong> </strong><strong>i</strong><strong>n</strong><strong>i</strong><strong>!</strong></p><p><strong>Penjelasan:</strong></p><p>Belajar Flutter untuk Pemula</p><p>Bagi kamu yang ingin belajar flutter, terdapat beberapa unsur-unsur dasar yang harus dipahami terlebih dahulu sebelum memulai menulis barisan kode.</p><p></p><p>Setiap elemen tatap muka yang terdapat di flutter disebut dengan istilah widget. Terdapat dua jenis widget, yakni sebagai berikut:</p><p></p><p>Stateless widget</p><p></p><p>Berdasarkan penjelasan Udacoding dalam video kursus di Udemy yang bertajuk “Happy Flutter - Membuat Aplikasi Android dan iOS Jadi Gampang”, stateless widget adalah elemen yang dibuat hanya dengan konfigurasi yang telah ditentukan dari awal.</p><p></p><p>Dapat disimpulkan, widget ini tidak akan berubah dan bersifat statis. Sebagai contoh, jika kita ingin membuat halaman berisi kontainer dengan warna latar yang tidak akan berubah.</p><p></p><p></p><p> </p><p>Statefull dan Stateless</p><p>Setelah dijalankan pada emulator, aplikasi akan tampak seperti berikut ini:</p><p></p><p>Belajar flutter: Emulator</p><p>Widget ini tidak akan berubah meskipun Anda menekan layar. Jadi, elemen-elemen yang sifatnya statis dibuat dengan Stateless widget.</p><p></p><p>Widget ini juga hanya dapat digunakan satu kali dan tidak dapat digunakan ulang di layar lain sehingga jika Anda ingin menggunakan kembali widget stateless yang sudah dibuat, maka Anda harus membuat kembali dari awal (mengkoding kembali).</p><p></p><p>Stateful widget</p><p></p><p>Berlawan dengan stateless widget, stateful widget bersifat dinamis dan dapat berubah-ubah sesuai dengan perintah yang diberikan. Stateful widget juga dapat berubah bentuk lebih dari satu kali dan dapat digunakan pada layar lain ketika aplikasi dijalankan.</p><p></p><p>Sebagai contoh, ketika kita menekan sebuah tombol, maka bentuk tombol tersebut akan berubah atau teks pada tombol tersebut berubah.</p><p></p><p>Flutter di Udemy</p><p>Layout Flutter</p><p></p><p>Layout merupakan hal terpenting ketika kita mengembangkan sebuah aplikasi karena kenyamanan dan kemudahan penggunaan sangat ditentukan oleh layout.</p><p></p><p>Tampilan layout pada flutter terdiri dari sebuah hierarki widget dimana terdapat widget tidak tampak yang mengatur tata letak dan widget yang tampak pada tatap muka pengguna seperti tombol like, gambar, text box, dan lain-lain.</p><p></p><p>Anda dapat melihat list widget selengkapnya di situs resmi flutter.</p><p></p><p>Memperdalam Belajar Flutter di Udemy</p><p>Meskipun tergolong baru, Flutter dan bahasa pemrograman Dart memiliki masa depan yang cerah dalam dunia pengembangan aplikasi mobile sehingga Anda patut mempertimbangkan mempelajari metode pembuatan aplikasi menggunakan tools ini.</p><p></p><p>Saya merekomendasikan untuk mengambil kursus Flutter di Udemy yang diajarkan oleh Udacoding di Udemy.bagi Anda yang ingin belajar flutter dan mendalaminya.</p><p></p><p>Materi yang disampaikan dalam Bahasa Indonesia akan mempermudah Anda untuk memahami materi yang disampaikan. Selain itu, mentor telah menyiapkan resources yang Anda butuhkan selama proses pembelajaran dimana resources tersebut dapat diunduh ke komputer Anda.</p><p></p><p>Bagi Anda yang belum memiliki kartu kredit atau ATM, dapat membeli kursus di Udemy dengan pembayaran melalui Indomaret dan Alfamart.</p><p></p><p>Tersedia pula berbagai kelas selain flutter seperti web development, desain grafis, keamanan siber, dan lain-lain di Udemy. Silakan berkunjung ke websitenya untuk melihat selengkapnya.</p><p></p><p># Advertorial # Flutter</p><p>Made with Love in Magelang</p><p></p><p>thanxx me later</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="transilt-how-to-clean-a-blender-cleaning-a-blender-is-easy-but-it-can-be-hard-if-you-dont-clean-it-immediately-after-you-use-it-even-if-you-dont-have-the-time-to-clean-it-immediately-after-use-a">
+                            39.  transilt How to Clean a Blender Cleaning a blender is easy, but it can be hard if you don't clean it immediately after you use it. Even if you don't have the time to clean it immediately after use, at least, pour in this simple cleaning the mixture to await your return later. 1) Ensure that the blender jug is sitting on the base properly before proceeding. 2) Fill the jug half full with warm water. 3) Add one to two drops of dish-washing liquid; if you have a lemon, put in half a lemon, as the lemon rind will scrape off any particles and the juice and rind will eliminate odours. 4) Place the lid on the blender. 5) Plug the blender back into the electrical socket or switch the power point on. 6) Press the low blend button and allow to blend for up to 30 seconds. 7) Check that it has caught all the particles. 8) Pour the liquid down the sink. 9) Rinse under the faucet. 10) Place upside down on a dish rack to dry.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>cara membersihkan blender</strong></p><p>Membersihkan blender memang mudah, tetapi akan sulit jika kamu tidak segera membersihkan nya setelah digunakan. Meskipun, kamu tidak punya waktu untuk membersihkan setelah digunakan, setidaknya tuangkan cairan pembersih  untuk menunggu kamu kembali lagi nanti.</p><p>1.  Pastikan tabung blender terpasang di alas nya dengan benar sebelum melanjutkan.</p><p>2. isi setengah tabung blender dengan air hangat</p><p>3.  tambahkan satu atau dua tetes cairan sabun pencuci piring.jika punya lemon, masukkan setengah lemon karnakulit lemon dapat mengikis partikel dan kulitnya dapat menghilangkan bau.</p><p>4. pasang tutup blender</p><p>5. colokan kembali blender ke soket listrik atau nyalakan powernya</p><p>6. tekan tombol dengan kecepataan rendah biarkan tercampur hingga 30 detik</p><p>7. Periksa bahwa itu telah menangkap semua partikel.</p><p>8. tuangkan cairan ke bak pembuangan/ wastafel</p><p>9. bilas dibawah keran</p><p>10. letakkan di rak piring dengan posisi terbalik hingga kering</p><p></p><p></p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="sambungan-dari-text-itu-monkeys-anxiously-await-klotok-arrivals-a-troop-of-30-light-brown-monkeys-may-plunge-from-branches-10-meters-of-higher-into-the-river-and-cross-directly-in-front-of-the-boa">
+                            40. Sambungan dari text itu: Monkeys anxiously await klotok arrivals. A troop of 30 light - brown monkeys may plunge from branches 10 meters of higher into the river and cross directly in front of the boat. These monkeys know that the boat's engine noise and the threat of its propeller scare crocodiles,which find these chubby monkeys delicious. At night, you can enjoy the clear sky and the amazingly bright stars as the only lights for the night.
+With such exotic, no wonder many tourists from foreign countries who love ecotourism frequently visit tanjung puting national park. What about you?
+Pertanyaan:
+1 How is the park different from the parks cities?
+2. How is camp leakey related to tanjung puting national park?
+3. What does the word ex-captive tell you about the orangutans in camp leakey,which is a rehabilitation site for orangutans?
+6. How can people reach camp leakey?
+JAWAB YG BENAR!</h2><br />
+                        1. It looks like a jungle. It is a real jungle which is home to the most interesting animal in the world; Orangutans<br /><br />2. Because camp leakey is located in the heart of Tanjung Puting National Park<br /><br />3. <br />4. People can reach Camp leakey by taking a boat down sekonyer river. The boat is called perahu klotok<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/RAOoVvTQeAI?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/apakah-pengertian-dari-galaksi-bentuk-elips.html">Apakah Pengertian Dari Galaksi Bentuk Elips</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/kisi-psikotes.html">Kisi Psikotes</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/pengertian-dari-alat-tes-epps.html">Pengertian Dari Alat Tes Epps</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/sebutkan-fungsi-sinkronisasi.html">Sebutkan Fungsi Sinkronisasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/sebutan-fans-arsenal.html">Sebutan Fans Arsenal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/sebutkan-tahap-tahap-lari-jarak-pendek.html">Sebutkan Tahap Tahap Lari Jarak Pendek</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/pengertian-dari-puisi-lama.html">Pengertian Dari Puisi Lama</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/kisi-kisi-nilai-mutlak-rpp.html">Kisi Kisi Nilai Mutlak Rpp</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/pengertian-dari-tajrid-dan-tajdid.html">Pengertian Dari Tajrid Dan Tajdid</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/contoh-efektif-dan-efisien.html">Contoh Efektif Dan Efisien</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/data-terpilih-yang-telah-melalui-seleksi-seorang-peneliti-sejarah-disebut.html">Data Terpilih Yang Telah Melalui Seleksi Seorang Peneliti Sejarah Disebut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/tes-kejiwaan-online.html">Tes Kejiwaan Online</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/soal-psikotes-arista-group.html">Soal Psikotes Arista Group</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/ujian-psikotes-sim-c.html">Ujian Psikotes Sim C</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/lembaga-psikotes-tangerang.html">Lembaga Psikotes Tangerang</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/orang-yang-memainkan-wayang-disebut.html">Orang Yang Memainkan Wayang Disebut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/pengertian-dari-polemik.html">Pengertian Dari Polemik</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/pengertian-dari-identity-card.html">Pengertian Dari Identity Card</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/tuliskan-ide-pokok-dari-setiap-paragraf-pada-teks-tersebut.html">Tuliskan Ide Pokok Dari Setiap Paragraf Pada Teks Tersebut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://maknaskripsi.github.io/soal-agama-islam-kelas-3-sd-bab-1-kurikulum-2013.html">Soal Agama Islam Kelas 3 Sd Bab 1 Kurikulum 2013</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://maknaskripsi.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://maknaskripsi.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://maknaskripsi.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://maknaskripsi.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://maknaskripsi.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
